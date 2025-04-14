@@ -290,11 +290,11 @@ footer a {
 }
 /* MEDIA QUERY (xl) */ 
 @media screen and (min-width: 1200px) {
-    main, .container1, .Photos, .galleryTitle {
+    main, .container1, .Photos {
         padding-left: 10em;
         padding-right: 10em
     }
-    .offerTitle {
+    .offerTitle, .galleryTitle {
         padding-left: 5em;
     }
     hr {
