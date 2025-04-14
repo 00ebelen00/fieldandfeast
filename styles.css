@@ -1,0 +1,308 @@
+/* CSS BY Belen Estrada */
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ROOT VARIABLES */
+:root {
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+}
+
+/* GLOBAL STYLES (mobile first/small) */ 
+@media only screen and (min-width: 485px) {
+    *, *:before,*:after {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px
+    }
+    body {
+        font-family: "Playfair Display";
+        background-color: var(--linen);
+        line-height: 1.5em;
+    }
+    main, section, footer { 
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1.5em;
+    }
+    .offerTitle {
+        padding-left: 1em;
+        padding-top: .5em;
+    }
+    hr {
+        border-color: var(--champagne-gold);
+        width:85%;
+        margin: 1.5em auto; 
+    }
+    
+    h2 {
+        color: var(--dark-charcoal);
+        font-size: 2em;
+        font-weight: 550;
+        margin-bottom: .2em;
+    }
+    h3 {
+        font-size: 1.6em;
+        font-weight: bold;
+        color: var(--linen);
+    }
+    a {
+        text-decoration: none;
+    }
+
+/* Header Style */
+    header {
+        background-color: #1F2A44;
+        color: var(--soft-white);
+    }
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        font-size: 3.7em;
+        text-align: center;
+        padding-top: .5em;
+    }
+    h1 + p {
+        text-align: center;
+        margin-top: 1.5em;
+        font-style: italic;
+        font-size: 1.2em;
+        padding-bottom: 1.5em;
+    }
+/* Nav Style */
+nav {
+    background-color: #E5C185;
+    color: var(--dark-charcoal);
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: .8em;
+}
+/*Main Styles */
+main {
+    margin-top: 2em;
+}
+main p {
+    font-size: 1.0em;
+    font-weight: 500;
+}
+/*Offerings Styles*/
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.container1 p { 
+    font-size: 1em;
+    padding-bottom: .8em;
+}
+#box1, #box2, #box3{
+    background-color: #76885B;
+    border-radius: .5em;
+    color: var(--linen);
+    box-shadow: 0 .1em .2em  var(--dark-charcoal);
+}
+.ingredientsList {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-top: .5em;    
+}
+.ingredientsList li {
+    padding: .2em;
+}
+
+/*Images Styles*/
+figure {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em; 
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--soft-white);
+    box-shadow: 0 .1em .5em var(--dark-charcoal);
+}
+figcaption {  
+    text-align: center;
+    padding: 1em;
+    font-style: italic; 
+    font-weight: 600;
+}
+#tomatoes img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#olives img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#tableSet img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#plating img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#basket img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section p { 
+    font-weight: 500;
+}
+#galleryLink{
+    display: flex;
+    flex-direction: column; 
+    border-radius: .5em; 
+    background: var(--olive-green);
+    padding: 1em;
+    color: var(--soft-white);
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+/*Footer Styles*/
+footer {
+    background-color: var(--midnight-blue);
+    text-align: center;  
+    font-weight: bold; 
+    padding-bottom: 2em;
+}
+address {
+    color: var(--soft-white);
+    padding-top: 3em;
+}
+footer a {
+    color: var(--champagne-gold); 
+}
+
+}
+
+/* MEDIA QUERY (medium) */ 
+@media screen and (min-width: 600px) {
+    hr {
+        width: 89%;
+    }
+    h1 {
+        font-weight: bold;
+    }
+    nav {
+        font-size: 1.6em;
+    }
+    main p { 
+        font-size: 1.1em
+    }
+    #box1 h3 {
+        font-weight: bold;
+    }
+    /*Offerings Styles*/
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #box3 { 
+        grid-column: span 2;
+    }
+    /*Images Styles*/
+    .Photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5em;
+        row-gap: 1em;
+    }
+
+    #galleryLink { 
+        grid-column: 1 /-1; 
+    }
+}
+/* MEDIA QUERY (large) */ 
+@media screen and (min-width: 900px) {
+    hr {
+        width:92%; 
+    }
+    .Photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #tomatoes img { 
+        width: 100%; height: auto; display: block;}
+}
+/* MEDIA QUERY (xl) */ 
+@media screen and (min-width: 1200px) {
+    main, .container1, .Photos, .gallery {
+        padding-left: 10em;
+        padding-right: 10em
+    }
+    .offerTitle {
+        padding-left: 5em;
+    }
+    hr {
+        width:73%; 
+    }
+    .Photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
