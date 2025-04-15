@@ -9,7 +9,7 @@
     <body>
 
         <header>
-            <img class="logo" src="images/fieldandfeast-logo.png" width="200px" alt="fieldandfeast-logo">
+            <img class="logo" src="images/fieldandfeast-logo.png" width="200" alt="fieldandfeast-logo">
             <h1>Field & Feast</h1>
             <p>Harvested with Care, Served with Elegance</p>
         </header>
@@ -29,8 +29,8 @@
 
         <hr>
         
-        <h2 class="offerTitle">Our Offerings</h2>
         <section class="container1"> 
+            <h2 class="offerTitle">Our Offerings</h2>
             <section id="box1">
                 <h3>Artisan Provisions</h3>
                 <p>Hand-selected, seasonal ingredients sourced from our estate farm and trusted local growers. Each item is chosen for its freshness, flavor, and integrity.</p>
@@ -60,9 +60,9 @@
             <p>Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.</p>
         </section>
 
-        <section class="Photos">
-            <figure> 
-                <img id="tomatoes"
+        <div class="Photos">
+            <figure id="tomatoes"> 
+                <img 
                 src="images/tomatoes-600w.jpg" 
                 srcset="images/tomatoes-200w.jpg 200w, 
                         images/tomatoes-300w.jpg 300w, 
@@ -73,19 +73,19 @@
             </figure> 
 
             <figure> 
-                <img 
+                <img id="olives"
                 src="images/olive-oil-600w.jpg" 
                 srcset="images/olive-oil-200w.jpg 200w, 
                         images/olive-oil-300w.jpg 300w, 
                         images/olive-oil-600w.jpg 600w" 
                 sizes="(min-width: 1200px) 200px, (min-width: 900px) 300px, 600px "
-                
                 alt="olive-oil"> 
                 <figcaption>Drizzling golden olive oil over fresh harvest.</figcaption> 
             </figure>
 
             <figure> 
-                <img src="images/table-setting-600w.jpg" 
+                <img id="tableSet"
+                src="images/table-setting-600w.jpg" 
                 srcset="images/table-setting-200w.jpg 200w, 
                         images/table-setting-300w.jpg 300w, 
                         images/table-setting-600w.jpg 600w"
@@ -95,7 +95,8 @@
             </figure>
 
             <figure> 
-                <img src="images/chef-plating-600w.jpg" 
+                <img id="plating"
+                src="images/chef-plating-600w.jpg" 
                 srcset="images/chef-plating-200w.jpg 200w, 
                         images/chef-plating-300w.jpg 300w, 
                         images/chef-plating-600w.jpg 600w" 
@@ -104,8 +105,9 @@
                 <figcaption>Artful plating with seasonal ingredients.</figcaption>       
             </figure>
 
-            <figure> 
-                <img src="images/basket-600w.jpg"
+            <figure id="basket"> 
+                <img
+                src="images/basket-600w.jpg"
                 srcset="images/basket-200w.jpg 200w,
                         images/basket-300w.jpg 300w, 
                         images/basket-600w.jpg 600w" 
@@ -114,7 +116,7 @@
                 <figcaption>Our monthly basket, curated with care.</figcaption>
             </figure>
             <a href="#" id="galleryLink">View Our Full Gallery</a>
-        </section>
+        </div>
 
         <hr>
 
@@ -124,7 +126,7 @@
                 (555) 123-4567 <br>
                 <a href="mailto:hello@fieldandfeast.com">hello@fieldandfeast.com</a> <br>
                 <br><br>
-                <a href="https://www.instagram.com/">Instagram</a>
+                <a class="social" href="https://www.instagram.com/">Instagram</a>
                 <a href="https://www.facebook.com/">Facebook</a>
             </address>
             
