@@ -123,6 +123,9 @@ nav ul {
     justify-items: center;
     padding: .8em;
 }
+li a {
+    color: #2B2B2B;
+}
 /*Main Styles */
 main {
     margin-top: 2em;
@@ -282,16 +285,19 @@ footer a {
 /* MEDIA QUERY (xl) */ 
 @media screen and (min-width: 1200px) {
     main, .container1, .galleryTitle, .Photos{
-        padding-left: 12.5em;
-        padding-right: 12.5em
+        padding-left: 10em;
+        padding-right: 10em;
     }
     hr {
         width: 74%; 
     }
     .Photos {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        font-size:small;
     }
-
-
+    #galleryLink {
+        margin-left: 8.5em;
+        margin-right: 8.5em;
+    }
 }
